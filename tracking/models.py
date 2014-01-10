@@ -69,7 +69,7 @@ class Visitor(models.Model):
 
 class Pageview(models.Model):
     visitor = models.ForeignKey(Visitor, related_name='pageviews')
-    url = models.CharField(max_length=500)
+    url = models.CharField(max_length=2000)
     method = models.CharField(max_length=20, null=True)
     view_time = models.DateTimeField()
 
