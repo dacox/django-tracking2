@@ -13,7 +13,7 @@ from tracking.managers import VisitorManager, PageviewManager
 from tracking.settings import TRACK_USING_GEOIP
 from .compat import User
 
-GEOIP_CACHE_TYPE = getattr(settings, 'GEOIP_CACHE_TYPE', 4)
+GEOIP_CACHE_TYPE = getattr(settings, 'GEOIP_CACHE_TYPE', 1)
 
 log = logging.getLogger(__file__)
 
